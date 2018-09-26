@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.pilab.maxu.calculator.calu.notebook.NoteBookActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/tb_exchange_rate"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context="com.pilab.maxu.calculator.calu.calu.CaluHistoryActivity"
+        tools:showIn="@layout/activity_calu">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="16dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="48sp"
+                android:layout_weight="1"
+                android:text="原币种编号:"
+                android:textSize="28sp" />
+
+            <Spinner
+                android:id="@+id/spinner1"
+                android:layout_width="0dp"
+                android:layout_height="48sp"
+                android:layout_weight="1"
+                android:entries="@array/kindsofmoney" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="48sp"
+                android:layout_weight="1"
+                android:text="目标币种编号:"
+                android:textSize="28sp" />
+
+            <Spinner
+                android:id="@+id/spinner2"
+
+                android:layout_width="0dp"
+                android:layout_height="48sp"
+                android:layout_weight="1"
+
+                android:entries="@array/kindsofmoney" />
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/now_rate"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="实时汇率:"
+            android:textAlignment="center"
+            android:textSize="28sp" />
+
+        <EditText
+            android:id="@+id/et_1"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:hint="@string/qingshurunixiangzhuanhuadejine"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp" />
+
+        <TextView
+            android:id="@+id/rate_res"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="结果："
+            android:textAlignment="center"
+            android:textSize="28sp" />
+
+    </LinearLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

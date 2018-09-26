@@ -1,0 +1,1 @@
+include ':calu', ':app', ':base', ':instantapp'

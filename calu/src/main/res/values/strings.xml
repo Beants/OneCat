@@ -1,0 +1,28 @@
+<resources>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="tv_hiti">欢迎使用本计算器！</string>
+    <string name="jia">+</string>
+    <string name="jian">－</string>
+    <string name="cheng">×</string>
+    <string name="chu">÷</string>
+    <string name="del">DEL</string>
+    <string name="_1">1</string>
+    <string name="_2">2</string>
+    <string name="_3">3</string>
+    <string name="_4">4</string>
+    <string name="_5">5</string>
+    <string name="_6">6</string>
+    <string name="_7">7</string>
+    <string name="_8">8</string>
+    <string name="_9">9</string>
+    <string name="point">.</string>
+    <string name="_0">0</string>
+    <string name="res">=</string>
+    <string name="title_item_list">Items</string>
+    <string name="title_activity_note_book">便签</string>
+    <string name="title_activity_calu">计算器</string>
+    <string name="history">历史记录</string>
+    <string name="huilvhuansuan">汇率换算</string>
+    <string name="qingshurunixiangzhuanhuadejine">请输入你想转换的金额</string>
+
+</resources>
